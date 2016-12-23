@@ -154,7 +154,8 @@ objects:
       type: ImageChange
 - apiVersion: v1
   kind: PersistentVolumeClaim
-  name: jenkins
+  metadata:
+    name: jenkins
   spec:
     accessModes:
     - ReadWriteMany
