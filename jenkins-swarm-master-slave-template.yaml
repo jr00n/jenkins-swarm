@@ -36,7 +36,7 @@ parameters:
 - description: Git repository with Dockerfile and slave entrypoint.
   displayName: Repository URL
   name: SLAVE_REPO_URL
-  value: https://github.com/giuseppetanzi/jenkins-swarm.git
+  value: https://github.com/jr00n/jenkins-swarm.git
 - description: The sub-directory inside the repository.
   displayName: Context Directory
   name: SLAVE_REPO_CONTEXTDIR
@@ -246,7 +246,7 @@ objects:
             name: jenkins-slave-data
             emptyDir:
         containers:
-          -            
+          -
             ports:
             - containerPort: 5555
               protocol: TCP
